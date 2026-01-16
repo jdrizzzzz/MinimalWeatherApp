@@ -1,6 +1,6 @@
 # Minimal Weather App
 
-A clean and minimal Flutter application that displays the current weather based on your GPS location using the WeatherAPI service. The app features animated weather icons, a simple UI layout, and secure API key handling with a `.env` file.
+A clean and minimal Flutter application that displays the current weather based on your GPS location using the WeatherAPI service. The app features animated weather icons and a simple UI layout.
 
 ## Features
 
@@ -10,7 +10,7 @@ A clean and minimal Flutter application that displays the current weather based 
 - Dynamic Lottie weather animations
 - Clean card-style UI design
 - Simple architecture and easy to understand
-- API key stored in `.env` (not in code)
+- API key stored in `.env` (create this)
 
 ## Tech Stack
 
@@ -58,8 +58,6 @@ flutter pub get
 ```
 WEATHER_API_KEY=your_api_key_here
 ```
-
-> Do **not** commit this file to GitHub.
 
 ### 4. Add assets to `pubspec.yaml`
 
@@ -109,11 +107,6 @@ The app uses Lottie designs:
 - clear.json (default)
 
 Animation changes are based on keyword matching (`"rain"`, `"cloud"`, `"clear"`, etc.).
-
-## API Key Security
-
-The app uses a `.env` file so the API key is not hardcoded.  
-However, for production security consider using a backend API instead of calling WeatherAPI directly from the client.
 
 ## Future Improvements
 
